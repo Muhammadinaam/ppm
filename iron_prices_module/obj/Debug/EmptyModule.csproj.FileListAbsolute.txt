@@ -1,0 +1,59 @@
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\bin\Debug\EmptyModule.exe
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\bin\Debug\EmptyModule.pdb
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\obj\Debug\EmptyModule.csprojResolveAssemblyReference.cache
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\obj\Debug\SchoolSoft.ExceptionMB.resources
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\obj\Debug\SchoolSoft.FrmConnectionConfig.resources
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\obj\Debug\SchoolSoft.FrmMainWindow.resources
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\obj\Debug\SchoolSoft.FrmNewAdminUser.resources
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\obj\Debug\SchoolSoft.FrmOpenCompany.resources
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\obj\Debug\EmptyModule.Properties.Resources.resources
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\obj\Debug\EmptyModule.csproj.GenerateResource.Cache
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\obj\Debug\EmptyModule.exe
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\SchoolSoft\SchoolSoft\obj\Debug\EmptyModule.pdb
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\EmptyModule\EmptyModule\obj\Debug\EmptyModule.exe
+C:\Users\Inaam Munir\Google Drive\AkontoEmptyModule\EmptyModule\EmptyModule\obj\Debug\EmptyModule.pdb
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\bin\Debug\EmptyModule.exe
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\bin\Debug\EmptyModule.pdb
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\EmptyModule.csprojResolveAssemblyReference.cache
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\EmptyModule.csproj.GenerateResource.Cache
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\EmptyModule.exe
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\EmptyModule.pdb
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\Module.ExceptionMB.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\Module.FrmChangePassword.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\Module.FrmConnectionConfig.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\Module.FrmMainWindow.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\Module.FrmOpenCompany.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\Module.Properties.Resources.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\EmptyModule\EmptyModule\obj\Debug\Module.FrmNewAdminUser.resources
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\EmptyModule.csprojResolveAssemblyReference.cache
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\Module.ExceptionMB.resources
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\Module.FrmChangePassword.resources
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\Module.FrmConnectionConfig.resources
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\Module.FrmMainWindow.resources
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\Module.FrmNewAdminUser.resources
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\Module.FrmOpenCompany.resources
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\Module.Properties.Resources.resources
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\EmptyModule.csproj.GenerateResource.Cache
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\EmptyModule.exe
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\bin\Debug\EmptyModule.exe
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\bin\Debug\EmptyModule.pdb
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\bin\Debug\Google.ProtocolBuffers.dll
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\bin\Debug\MySql.Data.xml
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\EmptyModule.pdb
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\Module.FrmUsersList.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\bin\Debug\EmptyModule.exe
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\bin\Debug\EmptyModule.pdb
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\EmptyModule.csprojResolveAssemblyReference.cache
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\Module.ExceptionMB.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\Module.FrmChangePassword.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\Module.FrmConnectionConfig.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\Module.FrmMainWindow.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\Module.FrmNewAdminUser.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\Module.FrmOpenCompany.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\Module.FrmUsersList.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\Module.Properties.Resources.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\EmptyModule.csproj.GenerateResource.Cache
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\EmptyModule.exe
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\EmptyModule.pdb
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\ak_empty_module\EmptyModule\obj\Debug\Module.FrmUser.resources
+C:\Users\Insaam\Documents\ak_empty_module\EmptyModule\obj\Debug\Module.FrmUser.resources

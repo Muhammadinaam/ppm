@@ -1,0 +1,54 @@
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\bin\Debug\EmptyModule.exe
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\bin\Debug\EmptyModule.pdb
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\bin\Debug\Google.ProtocolBuffers.dll
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\bin\Debug\MySql.Data.xml
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\iron_prices_module.csprojResolveAssemblyReference.cache
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\Module.ExceptionMB.resources
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmChangePassword.resources
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmConnectionConfig.resources
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmMainWindow.resources
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmNewAdminUser.resources
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmOpenCompany.resources
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmUser.resources
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmUsersList.resources
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\Module.Properties.Resources.resources
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\iron_prices_module.csproj.GenerateResource.Cache
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\EmptyModule.exe
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\EmptyModule.pdb
+C:\Users\Insaam\Documents\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmPrices.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\iron_prices_module.csprojResolveAssemblyReference.cache
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.ExceptionMB.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmChangePassword.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmConnectionConfig.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmMainWindow.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmNewAdminUser.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmOpenCompany.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmPrices.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmUser.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmUsersList.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.Properties.Resources.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\iron_prices_module.csproj.GenerateResource.Cache
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmAmountInput.resources
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\bin\Debug\IronPricesManagement.exe
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\bin\Debug\IronPricesManagement.pdb
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\IronPricesManagement.exe
+C:\Users\Inaam Munir\Google Drive\Akonto Modules\iron_prices_module\iron_prices_module\obj\Debug\IronPricesManagement.pdb
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\bin\Debug\IronPricesManagement.exe
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\bin\Debug\IronPricesManagement.pdb
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\bin\Debug\Google.ProtocolBuffers.dll
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\bin\Debug\MySql.Data.xml
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\iron_prices_module.csprojResolveAssemblyReference.cache
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.ExceptionMB.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmAmountInput.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmChangePassword.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmConnectionConfig.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmMainWindow.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmNewAdminUser.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmOpenCompany.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmPrices.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmUser.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.FrmUsersList.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\Module.Properties.Resources.resources
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\iron_prices_module.csproj.GenerateResource.Cache
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\IronPricesManagement.exe
+D:\xampp\locale\inaam\iron_prices_module\iron_prices_module\obj\Debug\IronPricesManagement.pdb
