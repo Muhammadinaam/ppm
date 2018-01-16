@@ -18,8 +18,8 @@ namespace Module
         public static string Port = "3306";         //sql port
         public static string Password = "";	//password
 
-        public static string ThisModuleName = "Iron Prices Management";     //here we will set the name of module
-        public static string ModName_lcns = "iron_pm";     //here we will set the name of module
+        public static string ThisModuleName = "Poultry Prices Management";     //here we will set the name of module
+        public static string ModName_lcns = "poultry_pm";     //here we will set the name of module
 
         public static string EncryptionKey = "123aabcc";
         
