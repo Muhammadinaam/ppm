@@ -181,7 +181,7 @@ namespace Module
                 
                 Functions.SqlNonQueryWithoutExHandled("CREATE TABLE `"+Program.ModName_lcns+"_factor` ( " +
 							  "`id` INT NOT NULL AUTO_INCREMENT COMMENT '', " +
-							  "`coa_name` VARCHAR(1000) NOT NULL COMMENT '', " +
+							  "`coa_name` VARCHAR(500) NOT NULL COMMENT '', " +
 							  "`factor` DECIMAL(40,5) NOT NULL COMMENT '', " +
 							  "PRIMARY KEY (`id`)  COMMENT '', " +
 							  "INDEX `fk_coa_name_idx` (`coa_name` ASC)  COMMENT '', " +
@@ -191,10 +191,13 @@ namespace Module
 							    "ON DELETE CASCADE " +
 							    "ON UPDATE CASCADE) engine = innodb;", Program.GlobalConn);
 
-                
+                Functions.SqlNonQueryWithoutExHandled("ALTER TABLE `poultry_pm_factor` " +
+                    "ADD UNIQUE INDEX `coa_name_UNIQUE` (`coa_name` ASC);", Program.GlobalConn);
+
+
 
                 // ENTRIES AND RECIPE TABLES SHOULD BE SAME
-                
+
                 Functions.SqlNonQueryWithoutExHandled("ALTER TABLE `entries` " +
 										"ADD COLUMN `supply_rate` DECIMAL(40,5) NULL DEFAULT NULL AFTER `Qty`, " +
 										"ADD COLUMN `factor` DECIMAL(20,5) NULL DEFAULT NULL AFTER `supply_rate`;", Program.GlobalConn);

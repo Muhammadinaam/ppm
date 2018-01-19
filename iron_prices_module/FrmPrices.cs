@@ -18,7 +18,9 @@ namespace Module
 	/// </summary>
 	public partial class FrmPrices : Form
 	{
-		public FrmPrices()
+        string factor_table = Program.ModName_lcns + "_factor";
+
+        public FrmPrices()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -37,201 +39,68 @@ namespace Module
 		
 		void refreshDGV()
 		{
-			
-			DataTable pricesTable = Functions.GetTable("select coa.Name as Item, coa.UOM as 'Unit', " +
-			                                           " cast( coalesce(" + Program.ModName_lcns + "_standard_prices.standard_price,coa.price) as decimal(40,5) ) as 'Standard Price', " +
 
-								"cast( (coa.price - coalesce(" + Program.ModName_lcns + "_standard_prices.standard_price,coa.price)) / " +
-								"(coalesce(" + Program.ModName_lcns + "_standard_prices.standard_price,coa.price) ) * 100 as decimal(40,5) ) as 'Margin (%)', " +
-								
-								"cast( coa.price as decimal(40,5) ) as 'Price before Discount', coalesce(coa.disc_rate, 0 ) as 'Discount (%)',  " +
-								"coa.price * (1-coalesce(coa.disc_rate,0)/100) as 'Price after Discount' " +
-								
-								"from coa " +
-								
-								"left join " + Program.ModName_lcns + "_standard_prices on " + Program.ModName_lcns + "_standard_prices.coa_name = coa.Name " +
-								
-								"where coa.type in ('Raw Material', 'WIP Material', 'Finished Goods') order by coa.name ;");
-			dgv_prices.DataSource = pricesTable;
-			
-			for (int i = 2; i < dgv_prices.Columns.Count; i++)
-			{
-				dgv_prices.Columns[i].DefaultCellStyle.Format = "0,0.00;(0,0.00)";
-				dgv_prices.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-				dgv_prices.Columns[i].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			}
-		}
-		
-		void Btn_changeStandardPriceClick(object sender, EventArgs e)
-		{
-			
-			if(dgv_prices.SelectedRows.Count == 0)
-			{
-				MessageBox.Show("Please select atleast one item.");
-				return;
-			}
-			
-			
-			FrmAmountInput F = new FrmAmountInput();
-			
-			F.lbl_inputLabel.Text = "Enter new Standard Price";
-			
-			if(F.ShowDialog() == DialogResult.OK)
-			{
-				foreach( DataGridViewRow r in dgv_prices.SelectedRows )
-				{
-					DataTable tempDT = Functions.GetTable( "select * from " + Program.ModName_lcns + "_standard_prices where coa_name = '"+r.Cells["item"].Value.ToString()+"' " );
-					
-					if(tempDT.Rows.Count == 0)
-					{
-						Functions.SqlNonQuery( "insert into " + Program.ModName_lcns + "_standard_prices (coa_name, standard_price) values " +
-						                      "('"+r.Cells["item"].Value.ToString()+"','"+F.txb_input.Text+"')" );
-					}
-					else
-					{
-						Functions.SqlNonQuery("update " + Program.ModName_lcns + "_standard_prices set standard_price = '"+F.txb_input.Text+"' " +
-						                      "where id = '"+tempDT.Rows[0]["id"].ToString()+"' ");
-					}
-				}
-				
-				MessageBox.Show("Changes saved successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			refreshDGV();
-			}
-			
-			
-		}
-		
-		void Btn_changeMarginPercentClick(object sender, EventArgs e)
-		{
-			if(dgv_prices.SelectedRows.Count == 0)
-			{
-				MessageBox.Show("Please select atleast one item.");
-				return;
-			}
-			
-			
-			FrmAmountInput F = new FrmAmountInput();
-			
-			F.lbl_inputLabel.Text = "Enter new Margin Value";
-			
-			if(F.ShowDialog() == DialogResult.OK)
-			{
-				foreach( DataGridViewRow r in dgv_prices.SelectedRows )
-				{
-					DataTable tempDT = Functions.GetTable( "select * from " + Program.ModName_lcns + "_standard_prices where coa_name = '"+r.Cells["item"].Value.ToString()+"' " );
-					
-					if(tempDT.Rows.Count == 0)
-					{
-						Functions.SqlNonQuery( "insert into " + Program.ModName_lcns + "_standard_prices (coa_name, standard_price) values " +
-						                      "('"+r.Cells["item"].Value.ToString()+"','"+r.Cells["Standard Price"].Value.ToString()+"')" );
-						
-						
-					}
-					
-					
-					decimal newPrice = Functions.ParseDecimal( r.Cells["Standard Price"].Value.ToString()) * 
-						( 1 + ( Functions.ParseDecimal(F.txb_input.Text)/100 ) );
-					
-					Functions.SqlNonQuery("update coa set price = '"+newPrice.ToString()+"' " +
-					                      "where name = '"+r.Cells["item"].Value.ToString()+"' ");
-					
-				}
-				
-				MessageBox.Show("Changes saved successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-				refreshDGV();
-			}
-			
-			
-		}
-		
-		void Btn_changePriceBeforeDiscClick(object sender, EventArgs e)
-		{
-			if(dgv_prices.SelectedRows.Count == 0)
-			{
-				MessageBox.Show("Please select atleast one item.");
-				return;
-			}
-			
-			
-			FrmAmountInput F = new FrmAmountInput();
-			
-			F.lbl_inputLabel.Text = "Enter new Price before discount";
-			
-			if(F.ShowDialog() == DialogResult.OK)
-			{
-				foreach( DataGridViewRow r in dgv_prices.SelectedRows )
-				{
-					DataTable tempDT = Functions.GetTable( "select * from " + Program.ModName_lcns + "_standard_prices where coa_name = '"+r.Cells["item"].Value.ToString()+"' " );
-					
-					if(tempDT.Rows.Count == 0)
-					{
-						Functions.SqlNonQuery( "insert into " + Program.ModName_lcns + "_standard_prices (coa_name, standard_price) values " +
-						                      "('"+r.Cells["item"].Value.ToString()+"','"+r.Cells["Standard Price"].Value.ToString()+"')" );
-						
-						
-					}
-					
-					
-					decimal newPrice = Functions.ParseDecimal( F.txb_input.Text );
-					
-					Functions.SqlNonQuery("update coa set price = '"+newPrice.ToString()+"' " +
-					                      "where name = '"+r.Cells["item"].Value.ToString()+"' ");
-					
-				}
-				
-				MessageBox.Show("Changes saved successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-				refreshDGV();
-			}
-		}
-		
-		void Btn_changeDiscountPercentClick(object sender, EventArgs e)
-		{
-			if(dgv_prices.SelectedRows.Count == 0)
-			{
-				MessageBox.Show("Please select atleast one item.");
-				return;
-			}
-			
-			
-			FrmAmountInput F = new FrmAmountInput();
-			
-			F.lbl_inputLabel.Text = "Enter new Discount";
-			
-			if(F.ShowDialog() == DialogResult.OK)
-			{
-				foreach( DataGridViewRow r in dgv_prices.SelectedRows )
-				{
-					DataTable tempDT = Functions.GetTable( "select * from " + Program.ModName_lcns + "_standard_prices where coa_name = '"+r.Cells["item"].Value.ToString()+"' " );
-					
-					if(tempDT.Rows.Count == 0)
-					{
-						Functions.SqlNonQuery( "insert into " + Program.ModName_lcns + "_standard_prices (coa_name, standard_price) values " +
-						                      "('"+r.Cells["item"].Value.ToString()+"','"+r.Cells["Standard Price"].Value.ToString()+"')" );
-						
-						
-					}
-					
-					
-					
-					
-					Functions.SqlNonQuery("update coa set disc_rate = '"+ Functions.ParseDecimal( F.txb_input.Text ) +"' " +
-					                      "where name = '"+r.Cells["item"].Value.ToString()+"' ");
-					
-				}
-				
-				MessageBox.Show("Changes saved successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-				refreshDGV();
-			}
-		}
-		
-		void Dgv_pricesColumnAdded(object sender, DataGridViewColumnEventArgs e)
-		{
-			if(e.Column.ValueType == typeof(decimal))
-			{
-				e.Column.DefaultCellStyle.Format = "0,0.00;(0,0.00)";
-				e.Column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-				e.Column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			}
-		}
-	}
+            decimal supply_rate = Functions.ParseDecimal( Functions.GetOptionValuesFromDB("ppm_supply_rate")[0] );
+
+            txb_supply_rate.Text = supply_rate.ToString();
+
+
+            
+
+            DataTable dt = Functions.GetTable("select coa.name as Item, coa.UOM, " + factor_table + ".Factor from coa " +
+                "left join " + factor_table + " on coa.name = " + factor_table + ".coa_name " +
+                "where coa.type in ('Raw Material', 'WIP-Material', 'Finished goods')");
+
+            dt.Columns.Add("Sale Rate", typeof(decimal));
+
+            foreach (DataRow r in dt.Rows)
+            {
+                r["Sale Rate"] = Functions.ParseDecimal( r["Factor"].ToString() ) * Functions.ParseDecimal( txb_supply_rate.Text );
+            }
+
+            dgv_prices.DataSource = dt;
+
+            dgv_prices.Columns["Factor"].DefaultCellStyle.Format = "#,0.00;(0,0.00)";
+            dgv_prices.Columns["Sale Rate"].DefaultCellStyle.Format = "#,0.00;(0,0.00)";
+        }
+
+        private void btn_changeSupplyRate_Click(object sender, EventArgs e)
+        {
+            FrmAmountInput f = new FrmAmountInput();
+            f.lbl_inputLabel.Text = "Enter Supply Rate";
+
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                txb_supply_rate.Text = f.txb_input.Text;
+                Functions.SetOptionValues("ppm_supply_rate", new string[] { txb_supply_rate.Text, "", "", "", "", "" });
+                refreshDGV();
+            }
+        }
+
+        private void btn_change_factor_Click(object sender, EventArgs e)
+        {
+            if (dgv_prices.SelectedRows.Count == 0)
+            {
+                MessageBox.Show( "Please select atleast one item", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information );
+                return;
+            }
+
+            FrmAmountInput f = new FrmAmountInput();
+            f.lbl_inputLabel.Text = "Enter Factor";
+
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                foreach (DataGridViewRow r in dgv_prices.Rows)
+                {
+                    
+                    Functions.SqlNonQuery($"REPLACE into {factor_table} (coa_name, factor) values ('{r.Cells["Item"].Value}', '{f.txb_input.Text}')");
+                    r.Cells["Factor"].Value = f.txb_input.Text;
+
+                    
+                }
+
+                refreshDGV();
+            }
+        }
+    }
 }

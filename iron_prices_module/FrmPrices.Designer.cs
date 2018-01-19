@@ -36,96 +36,92 @@ namespace Module
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dgv_prices = new System.Windows.Forms.DataGridView();
-			this.btn_changeStandardPrice = new System.Windows.Forms.Button();
-			this.btn_changeMarginPercent = new System.Windows.Forms.Button();
-			this.btn_changePriceBeforeDisc = new System.Windows.Forms.Button();
-			this.btn_changeDiscountPercent = new System.Windows.Forms.Button();
-			((System.ComponentModel.ISupportInitialize)(this.dgv_prices)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// dgv_prices
-			// 
-			this.dgv_prices.AllowUserToAddRows = false;
-			this.dgv_prices.AllowUserToDeleteRows = false;
-			this.dgv_prices.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-									| System.Windows.Forms.AnchorStyles.Left) 
-									| System.Windows.Forms.AnchorStyles.Right)));
-			this.dgv_prices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgv_prices.Location = new System.Drawing.Point(12, 12);
-			this.dgv_prices.Name = "dgv_prices";
-			this.dgv_prices.ReadOnly = true;
-			this.dgv_prices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dgv_prices.Size = new System.Drawing.Size(685, 362);
-			this.dgv_prices.TabIndex = 0;
-			this.dgv_prices.ColumnAdded += new System.Windows.Forms.DataGridViewColumnEventHandler(this.Dgv_pricesColumnAdded);
-			// 
-			// btn_changeStandardPrice
-			// 
-			this.btn_changeStandardPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.btn_changeStandardPrice.Location = new System.Drawing.Point(564, 385);
-			this.btn_changeStandardPrice.Name = "btn_changeStandardPrice";
-			this.btn_changeStandardPrice.Size = new System.Drawing.Size(133, 23);
-			this.btn_changeStandardPrice.TabIndex = 1;
-			this.btn_changeStandardPrice.Text = "Change Standard Price";
-			this.btn_changeStandardPrice.UseVisualStyleBackColor = true;
-			this.btn_changeStandardPrice.Click += new System.EventHandler(this.Btn_changeStandardPriceClick);
-			// 
-			// btn_changeMarginPercent
-			// 
-			this.btn_changeMarginPercent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.btn_changeMarginPercent.Location = new System.Drawing.Point(425, 385);
-			this.btn_changeMarginPercent.Name = "btn_changeMarginPercent";
-			this.btn_changeMarginPercent.Size = new System.Drawing.Size(133, 23);
-			this.btn_changeMarginPercent.TabIndex = 2;
-			this.btn_changeMarginPercent.Text = "Change Margin (%)";
-			this.btn_changeMarginPercent.UseVisualStyleBackColor = true;
-			this.btn_changeMarginPercent.Click += new System.EventHandler(this.Btn_changeMarginPercentClick);
-			// 
-			// btn_changePriceBeforeDisc
-			// 
-			this.btn_changePriceBeforeDisc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.btn_changePriceBeforeDisc.Location = new System.Drawing.Point(254, 385);
-			this.btn_changePriceBeforeDisc.Name = "btn_changePriceBeforeDisc";
-			this.btn_changePriceBeforeDisc.Size = new System.Drawing.Size(165, 23);
-			this.btn_changePriceBeforeDisc.TabIndex = 3;
-			this.btn_changePriceBeforeDisc.Text = "Change Price before Discount";
-			this.btn_changePriceBeforeDisc.UseVisualStyleBackColor = true;
-			this.btn_changePriceBeforeDisc.Click += new System.EventHandler(this.Btn_changePriceBeforeDiscClick);
-			// 
-			// btn_changeDiscountPercent
-			// 
-			this.btn_changeDiscountPercent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.btn_changeDiscountPercent.Location = new System.Drawing.Point(130, 385);
-			this.btn_changeDiscountPercent.Name = "btn_changeDiscountPercent";
-			this.btn_changeDiscountPercent.Size = new System.Drawing.Size(118, 23);
-			this.btn_changeDiscountPercent.TabIndex = 4;
-			this.btn_changeDiscountPercent.Text = "Change Discount (%)";
-			this.btn_changeDiscountPercent.UseVisualStyleBackColor = true;
-			this.btn_changeDiscountPercent.Click += new System.EventHandler(this.Btn_changeDiscountPercentClick);
-			// 
-			// FrmPrices
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(709, 420);
-			this.Controls.Add(this.btn_changeDiscountPercent);
-			this.Controls.Add(this.btn_changePriceBeforeDisc);
-			this.Controls.Add(this.btn_changeMarginPercent);
-			this.Controls.Add(this.btn_changeStandardPrice);
-			this.Controls.Add(this.dgv_prices);
-			this.Name = "FrmPrices";
-			this.ShowIcon = false;
-			this.ShowInTaskbar = false;
-			this.Text = "Prices";
-			this.Load += new System.EventHandler(this.FrmPricesLoad);
-			((System.ComponentModel.ISupportInitialize)(this.dgv_prices)).EndInit();
-			this.ResumeLayout(false);
+            this.dgv_prices = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txb_supply_rate = new System.Windows.Forms.TextBox();
+            this.btn_changeSupplyRate = new System.Windows.Forms.Button();
+            this.btn_change_factor = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_prices)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgv_prices
+            // 
+            this.dgv_prices.AllowUserToAddRows = false;
+            this.dgv_prices.AllowUserToDeleteRows = false;
+            this.dgv_prices.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_prices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_prices.Location = new System.Drawing.Point(12, 32);
+            this.dgv_prices.Name = "dgv_prices";
+            this.dgv_prices.ReadOnly = true;
+            this.dgv_prices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_prices.Size = new System.Drawing.Size(685, 376);
+            this.dgv_prices.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Supply Rate";
+            // 
+            // txb_supply_rate
+            // 
+            this.txb_supply_rate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_supply_rate.Location = new System.Drawing.Point(83, 6);
+            this.txb_supply_rate.Name = "txb_supply_rate";
+            this.txb_supply_rate.ReadOnly = true;
+            this.txb_supply_rate.Size = new System.Drawing.Size(75, 20);
+            this.txb_supply_rate.TabIndex = 2;
+            this.txb_supply_rate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // btn_changeSupplyRate
+            // 
+            this.btn_changeSupplyRate.Location = new System.Drawing.Point(164, 4);
+            this.btn_changeSupplyRate.Name = "btn_changeSupplyRate";
+            this.btn_changeSupplyRate.Size = new System.Drawing.Size(123, 23);
+            this.btn_changeSupplyRate.TabIndex = 3;
+            this.btn_changeSupplyRate.Text = "Change Supply Rate";
+            this.btn_changeSupplyRate.UseVisualStyleBackColor = true;
+            this.btn_changeSupplyRate.Click += new System.EventHandler(this.btn_changeSupplyRate_Click);
+            // 
+            // btn_change_factor
+            // 
+            this.btn_change_factor.Location = new System.Drawing.Point(498, 3);
+            this.btn_change_factor.Name = "btn_change_factor";
+            this.btn_change_factor.Size = new System.Drawing.Size(199, 23);
+            this.btn_change_factor.TabIndex = 4;
+            this.btn_change_factor.Text = "Change Factor of Selected Items";
+            this.btn_change_factor.UseVisualStyleBackColor = true;
+            this.btn_change_factor.Click += new System.EventHandler(this.btn_change_factor_Click);
+            // 
+            // FrmPrices
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(709, 420);
+            this.Controls.Add(this.btn_change_factor);
+            this.Controls.Add(this.btn_changeSupplyRate);
+            this.Controls.Add(this.txb_supply_rate);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgv_prices);
+            this.Name = "FrmPrices";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.Text = "Prices";
+            this.Load += new System.EventHandler(this.FrmPricesLoad);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_prices)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
-		private System.Windows.Forms.Button btn_changeDiscountPercent;
-		private System.Windows.Forms.Button btn_changePriceBeforeDisc;
-		private System.Windows.Forms.Button btn_changeMarginPercent;
-		private System.Windows.Forms.Button btn_changeStandardPrice;
 		private System.Windows.Forms.DataGridView dgv_prices;
-	}
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txb_supply_rate;
+        private System.Windows.Forms.Button btn_changeSupplyRate;
+        private System.Windows.Forms.Button btn_change_factor;
+    }
 }

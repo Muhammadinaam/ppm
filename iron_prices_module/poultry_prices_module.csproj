@@ -65,7 +65,9 @@
     <Compile Include="ExceptionMB.Designer.cs">
       <DependentUpon>ExceptionMB.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAmountInput.cs" />
+    <Compile Include="FrmAmountInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmAmountInput.Designer.cs">
       <DependentUpon>FrmAmountInput.cs</DependentUpon>
     </Compile>
@@ -97,7 +99,9 @@
     <Compile Include="FrmOpenCompany.Designer.cs">
       <DependentUpon>FrmOpenCompany.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPrices.cs" />
+    <Compile Include="FrmPrices.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmPrices.Designer.cs">
       <DependentUpon>FrmPrices.cs</DependentUpon>
     </Compile>

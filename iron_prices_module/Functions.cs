@@ -39,7 +39,49 @@ namespace Module
                 return null;
             }
         }
-        
+
+        public static string[] GetOptionValuesFromDB(string option)
+        {
+            DataTable OptionsDT = Functions.GetTable("select * from options where name = '" + option + "' limit 1");
+
+
+
+            string[] ret = new string[6];
+
+            if (OptionsDT != null)
+            {
+                if (OptionsDT.Rows.Count > 0)
+                {
+                    ret[0] = OptionsDT.Rows[0]["value"].ToString();
+                    ret[1] = OptionsDT.Rows[0]["value2"].ToString();
+                    ret[2] = OptionsDT.Rows[0]["value3"].ToString();
+                    ret[3] = OptionsDT.Rows[0]["value4"].ToString();
+                    ret[4] = OptionsDT.Rows[0]["value5"].ToString();
+                    ret[5] = OptionsDT.Rows[0]["value6"].ToString();
+                }
+            }
+
+            return ret;
+
+        }
+
+        public static bool SetOptionValues(string option, string[] six_values)
+        {
+
+
+            SqlNonQuery("delete from options where name = '" + option + "'");
+
+
+            return SqlNonQuery(
+                               string.Format("insert into options " +
+                                             "( name, value, value2, value3, value4, value5, value6 ) " +
+                                             "values ( '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}' )",
+                                              option, six_values[0], six_values[1], six_values[2],
+                                              six_values[3], six_values[4], six_values[5]
+                                            )
+                              );
+        }
+
         public static void NumericKeyPressOnly(object sender, KeyPressEventArgs e)
 		{
 			 // allows 0-9, backspace, and decimal
