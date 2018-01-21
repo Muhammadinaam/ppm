@@ -90,10 +90,13 @@ namespace Module
 
             if (f.ShowDialog() == DialogResult.OK)
             {
-                foreach (DataGridViewRow r in dgv_prices.Rows)
+                foreach (DataGridViewRow r in dgv_prices.SelectedRows)
                 {
                     
-                    Functions.SqlNonQuery($"REPLACE into {factor_table} (coa_name, factor) values ('{r.Cells["Item"].Value}', '{f.txb_input.Text}')");
+                    
+                    
+                    Functions.SqlNonQuery( string.Format( "replace into {0} (coa_name, factor) values ('{1}','{2}')", factor_table, r.Cells["Item"].Value, f.txb_input.Text  ) );
+                    
                     r.Cells["Factor"].Value = f.txb_input.Text;
 
                     
